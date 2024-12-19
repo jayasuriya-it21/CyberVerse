@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import ReactMarkdown from "react-markdown"; // Import react-markdown
 import "./CoursePage.css";
 
 const CoursePage = () => {
@@ -51,7 +52,6 @@ const CoursePage = () => {
 
       <div className="main-content">
         <div className="sidebar">
-          
           <ul className="topic-list">
             {topics.length > 0 ? (
               topics.map((topic) => (
@@ -73,7 +73,7 @@ const CoursePage = () => {
           {selectedTopic ? (
             <>
               <h1>{selectedTopic.name}</h1>
-              <p>{selectedTopic.description}</p>
+              <ReactMarkdown>{selectedTopic.description}</ReactMarkdown>
               {selectedTopic.videoLink && (
                 <iframe
                   src={selectedTopic.videoLink}
