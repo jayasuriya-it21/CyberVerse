@@ -1,0 +1,102 @@
+/* Support page container */
+.support-page {
+	background-color: #6bb0fe;
+    /* Light blue background for the page */
+    min-height: 100vh; /* Make sure it covers the entire screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 20px; /* Add padding around the content */
+  }
+  
+  /* Support form container styling */
+  .support-container {
+    padding: 20px;
+    max-width: 800px;
+    width: 100%; /* Ensure the form doesn't exceed the container */
+    background: #ffffff; /* White background for the form container */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Title and description */
+  .support-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .support-description {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Status message */
+  .support-status {
+    text-align: center;
+    font-size: 14px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  /* Form styling */
+  .support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .form-textarea {
+    resize: none;
+  }
+  
+  /* Button styling */
+  .form-button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .form-button:hover {
+    background: #0056b3;
+  }
+  
+  .form-button:active {
+    background: #003d80;
+  }
+  
